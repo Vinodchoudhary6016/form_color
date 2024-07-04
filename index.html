@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    fieldset {
+        background-color: aqua;
+    }
+    /* CSS ATTRIBUTE SELECTOR */
+    
+    a[target] {
+        background-color: yellow;
+    }
+    /* CSS [attribute~="value"] */
+    
+    [type~=number] {
+        border: 2px solid blue;
+    }
+    
+    [class~=age] {
+        border: 2px solid blue;
+    }
+    
+    [class~=ID] {
+        border: 2px solid blue;
+    }
+    /* CSS [attribute|="value"] */
+    
+    [class|="top"] {
+        border: 2px solid red;
+    }
+    /* CSS [attribute^="value"] */
+    
+    [class^="same"] {
+        border: 2px solid lime;
+    }
+    /* CSS [attribute$="value"] */
+    
+    [class$=pass] {
+        border: 2px solid pink;
+    }
+    
+    .sub {
+        size: 200px;
+    }
+</style>
+
+<body>
+    <fieldset>
+        <center>
+            <p><b>Registration Form</b> <br> Fill out the carefully for Registration</p>
+
+        </center><br>
+        <label for="" id="fname" class="top-1">First Name</label>
+        <input type="text" id="fname" class="top-1"> <br><br>
+
+        <label for="" id="lname" class="top-2">Last Name</label>
+        <input type="text" name="" id="lname" class="top-2"><br><br>
+
+        <label for="" id="Age" class="age">Age</label>
+        <input type="number" id="Age"><br><br>
+
+
+        <label id="Gender" class="samecontent">Gender </label>
+        <select name="" id="Gender" class="same-counter">
+        <option value="">Please Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select><br><br>
+
+        <label for="" id="Email" class="same-content">Email</label>
+        <input type="email" id="Email" class="same-count"><br><br>
+
+        <label for="" id="ID" class="ID">Student ID</label>
+        <input type="number" id="ID"><br><br>
+
+        <label for="" id="pass" class="id-pass">Password</label>
+        <input type="password" id="pass" class="idpass"> <br><br>
+
+        <input type="checkbox">
+        <label for=""><a href="www.10000coders.com" target="_blank">Terms and Conditions</a></label>
+        <br><br><br>
+        <center>
+            <input type="submit" class="sub">
+        </center>
+
+
+
+    </fieldset>
+</body>
+
+</html>
